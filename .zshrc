@@ -47,13 +47,13 @@ ENABLE_CORRECTION="false"
 # Add wisely, as too many plugins slow down shell startup.
 # Add gpg-agent
 # Add tmux
-plugins=(atom git bower brew bundler capistrano coffee gem git git-flow github gitignore node npm nvm osx postgres pow rails rbenv rsync ruby ssh-agent textmate zsh_reload)
+plugins=(atom git bower brew bundler capistrano coffee gem git git-flow gitignore node npm nvm osx postgres pow rails rbenv rsync ruby ssh-agent textmate zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/opt/boxen/homebrew/bin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
