@@ -19,6 +19,10 @@ function ruby_status {
   ruby_version=`ruby -v|cut -d" " -f1-2`
   rbenv_version=`rbenv version-name`
   rbenv_set_by=`rbenv version|cut -d" " -f4|cut -d")" -f1`
+  egrep -q "$HOME.*/.ruby-version" << EOF
+$rbenv_set_by
+EOF
+  [ $? -eq 0 ] && rbenv_set_by='.ruby-version'
   rbenv_set_by=${rbenv_set_by/$PWD\/./}
   if [ $rbenv_version = 'system' ]; then
     echo "using %{$fg[magenta]%}${ruby_version} %{$fg[white]%}(%{$fg[magenta]%}${rbenv_version}%{$fg[white]%})%{$reset_color%}"
