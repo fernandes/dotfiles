@@ -9,7 +9,7 @@ alias fshort="mate ~/.oh-my-zsh/custom/fernandes.zsh"
 
 # My ruby/rails dev alias
 alias bi="bundle install --path vendor/bundle --no-prune"
-alias gem_cache="mkdir -p vendor && ln -ns ~/lab/caches/gem vendor/cache && mkdir -p vendor/bundle/ && ln -ns ~/lab/caches/gem vendor/bundle/cache"
+alias gem_cache="mkdir -p vendor && ln -ns ~/.cache/gems vendor/cache && mkdir -p vendor/bundle/ && ln -ns ~/.cache/gems vendor/bundle/cache"
 alias pryr="pry -r ./config/environment"
 
 # Reload zsh!
