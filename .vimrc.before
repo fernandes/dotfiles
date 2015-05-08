@@ -1,0 +1,13 @@
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_rails = 1
+let g:rubycomplete_use_bundler = 1
+
+let g:tagbar_ctags_bin = '/opt/boxen/homebrew/bin/ctags'

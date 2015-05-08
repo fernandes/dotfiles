@@ -1,5 +1,5 @@
 # === EDITOR ===
-Pry.editor = 'mate'
+Pry.editor = 'vim'
 
 # == Pry-Nav - Using pry as a debugger ==
 if defined?(PryDebugger)
@@ -8,3 +8,4 @@ if defined?(PryDebugger)
   Pry.commands.alias_command 'n', 'next'
   Pry.commands.alias_command 'f', 'finish'
 end
+
