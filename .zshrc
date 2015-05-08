@@ -83,6 +83,10 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/opt/boxe
 
 # load my boxen env
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+if [ ! -f /opt/boxen/env.sh ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
@@ -92,3 +96,4 @@ then
 fi
 
 export PATH=$PATH:$HOME/.bin # Some cool stuff
+
