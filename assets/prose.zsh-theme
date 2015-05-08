@@ -2,6 +2,9 @@
 # http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/#screenshots
 # it was heavly changed, but kept prose name as a tribute
 
+bold=$(tput bold)
+normal=$(tput sgr0)
+
 function box_name {
     [ -f ~/.box-name ] && cat ~/.box-name || hostname -s
 }
@@ -25,12 +28,12 @@ EOF
   [ $? -eq 0 ] && rbenv_set_by='.ruby-version'
   rbenv_set_by=${rbenv_set_by/$PWD\/./}
   if [ $rbenv_version = 'system' ]; then
-    echo "using %F{162}${ruby_version} %F{255}(%F{162}${rbenv_version}%F{255})%{$reset_color%}"
+    echo "${bold}using %F{198}${ruby_version} %F{255}(%F{198}${rbenv_version}%F{255})%{$reset_color%}"
   else
-    echo "using %F{162}${ruby_version} %F{255}(%F{162}${rbenv_set_by}%F{255})%{$reset_color%}"
+    echo "${bold}using %F{198}${ruby_version} %F{255}(%F{198}${rbenv_set_by}%F{255})%{$reset_color%}"
   fi
 }
 
 
-PROMPT='%F{162}%n%{$reset_color%} at %F{208}$(box_name)%{$reset_color%} in %F{78}~%{$reset_color%} $(ruby_status) $(git_super_status)
+PROMPT='${bold}%F{198}%n%{$reset_color%}${bold} at %F{208}$(box_name)%{$reset_color%}${bold} in %F{40}%~%{$reset_color%}${bold} $(ruby_status) $(git_super_status)
 ○ '
