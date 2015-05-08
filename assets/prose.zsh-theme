@@ -25,12 +25,12 @@ EOF
   [ $? -eq 0 ] && rbenv_set_by='.ruby-version'
   rbenv_set_by=${rbenv_set_by/$PWD\/./}
   if [ $rbenv_version = 'system' ]; then
-    echo "using %{$fg[magenta]%}${ruby_version} %{$fg[white]%}(%{$fg[magenta]%}${rbenv_version}%{$fg[white]%})%{$reset_color%}"
+    echo "using %F{162}${ruby_version} %F{255}(%F{162}${rbenv_version}%F{255})%{$reset_color%}"
   else
-    echo "using %{$fg[magenta]%}${ruby_version} %{$fg[white]%}(%{$fg[magenta]%}${rbenv_set_by}%{$fg[white]%})%{$reset_color%}"
+    echo "using %F{162}${ruby_version} %F{255}(%F{162}${rbenv_set_by}%F{255})%{$reset_color%}"
   fi
 }
 
 
-PROMPT='%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}$(box_name)%{$reset_color%} in %{$fg_bold[green]%}%~%{$reset_color%} $(ruby_status) $(git_super_status)
+PROMPT='%F{162}%n%{$reset_color%} at %F{208}$(box_name)%{$reset_color%} in %F{78}~%{$reset_color%} $(ruby_status) $(git_super_status)
 ○ '
