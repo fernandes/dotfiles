@@ -9,16 +9,16 @@ cd $HOME
 
 #[ ! -d ~/.janus ] && mkdir ~/.janus
 #cd ~/.janus
-#git clone git@github.com:Rykka/colorv.vim.git
-#git clone git@github.com:godlygeek/tabular.git
-#git clone git@github.com:bling/vim-airline.git
-#git clone git@github.com:quentindecock/vim-cucumber-align-pipes.git
-#git clone git@github.com:tpope/vim-cucumber.git
-#git clone git@github.com:rodjek/vim-puppet.git
-#git clone git@github.com:ecomba/vim-ruby-refactoring.githubit
-#git clone git@github.com:farseer90718/vim-taskwarrioraskwarrior.git
-#git clone git@github.com:christoomey/vim-tmux-navigator.git
-#git clone git@github.com:zertico/vim-zertico-theme.git
+#git clone https://github.com/Rykka/colorv.vim.git
+#git clone https://github.com/godlygeek/tabular.git
+#git clone https://github.com/bling/vim-airline.git
+#git clone https://github.com/quentindecock/vim-cucumber-align-pipes.git
+#git clone https://github.com/tpope/vim-cucumber.git
+#git clone https://github.com/rodjek/vim-puppet.git
+#git clone https://github.com/ecomba/vim-ruby-refactoring.githubit
+#git clone https://github.com/farseer90718/vim-taskwarrioraskwarrior.git
+#git clone https://github.com/christoomey/vim-tmux-navigator.git
+#git clone https://github.com/zertico/vim-zertico-theme.git
 
 #wget --no-check-certificate https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
