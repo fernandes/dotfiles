@@ -15,7 +15,7 @@ cd $HOME
 #git clone https://github.com/quentindecock/vim-cucumber-align-pipes.git
 #git clone https://github.com/tpope/vim-cucumber.git
 #git clone https://github.com/rodjek/vim-puppet.git
-#git clone https://github.com/ecomba/vim-ruby-refactoring.githubit
+#git clone https://github.com/ecomba/vim-ruby-refactoring.git
 #git clone https://github.com/farseer90718/vim-taskwarrioraskwarrior.git
 #git clone https://github.com/christoomey/vim-tmux-navigator.git
 #git clone https://github.com/zertico/vim-zertico-theme.git
