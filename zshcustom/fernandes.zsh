@@ -23,7 +23,7 @@ psc() { [ -f ~/.oh-my-zsh/plugins/$1/$1.plugin.zsh ] && grep "^alias" ~/.oh-my-z
 alias pscl="ls ~/.oh-my-zsh/plugins/;"
 
 # My custom grep and ps aux
-alias fgrep="egrep -nrHi"
+alias fgrep="egrep -nrHi --color"
 alias psgrep="ps aux | egrep -v egrep | egrep -i"
 
 # Go home
