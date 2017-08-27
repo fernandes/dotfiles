@@ -88,6 +88,9 @@ if [ ! -f /opt/boxen/env.sh ]; then
   eval "$(rbenv init -)"
 fi
 
+# load homebrew installed libs
+export LIBRARY_PATH="$LIBRARY_PATH:/opt/boxen/homebrew/lib"
+
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 if [[ -a ~/.localrc ]]
@@ -97,3 +100,11 @@ fi
 
 export PATH=$PATH:$HOME/.bin # Some cool stuff
 
+# opt out of homebrew GA
+export HOMEBREW_NO_ANALYTICS=1
+
+# You will need to set up the PATH environment variable in your terminal to have access to Yarn’s binaries globally.
+export PATH="$PATH:`yarn global bin`"
+
+# added by travis gem
+[ -f /Users/fernandes/.travis/travis.sh ] && source /Users/fernandes/.travis/travis.sh
