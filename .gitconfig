@@ -1,6 +1,6 @@
 [user]
 	name = Celso Fernandes
-  email = fernandes@zertico.com
+  email = celso.fernandes@gmail.com
 # set your user tokens as enivornment variables, such as ~/.secrets
 # See the README for examples.
 [color]
@@ -120,7 +120,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -132,3 +132,7 @@ protocol = https
 helper = /opt/boxen/bin/boxen-git-credential
 [web]
 	browser = google-chrome
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
