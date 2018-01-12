@@ -104,7 +104,7 @@
 [core]
   autocrlf = false
   editor = vim
-	excludesfile = /opt/boxen/config/git/gitignore
+	excludesfile = /opt/boxen/homebrew/etc/boxen/git/gitignore
 [advice]
   statusHints = false
 [diff]
