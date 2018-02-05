@@ -22,7 +22,7 @@ cd $HOME
 
 #wget --no-check-certificate https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
-for file in .gitconfig .pryrc .rdebugrc .thymerc .tmux.conf .vimrc.before .vimrc.after .zshrc; do
+for file in .gitconfig .pryrc .rdebugrc .thymerc .tmux.conf .tmux-macos .tmux-linux .vimrc.before .vimrc.after .zshrc; do
   [ -e ${HOME}/${file} ] && rm -rf ${HOME}/${file}
   [ -L ${HOME}/${file} ] && rm -rf ${HOME}/${file}
   ln -ns ${DOTFILES_ROOT}/${file} $HOME/${file}
